@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="710.0" prefWidth="980.0" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registroempleados.controller.EmpleadoController">
+<AnchorPane prefHeight="710.0" prefWidth="980.0" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/25.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registroempleados.controller.EmpleadoController">
    <children>
       <!-- Título Principal -->
       <Label layoutX="25.0" layoutY="20.0" styleClass="titulo" text="REGISTRO DE EMPLEADOS" />
@@ -49,25 +56,27 @@
       <Button fx:id="btnLimpiar" layoutX="165.0" layoutY="274.0" onAction="#limpiarCampos" prefHeight="32.0" prefWidth="110.0" styleClass="btn-secondary" text="Limpiar" />
       <Button fx:id="btnActualizar" layoutX="296.0" layoutY="274.0" onAction="#actualizarTabla" prefHeight="32.0" prefWidth="130.0" styleClass="btn-info" text="Actualizar tabla" />
 
-      <Separator layoutX="25.0" layoutY="325.0" prefWidth="930.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+      <Separator layoutX="25.0" layoutY="363.0" prefHeight="3.0" prefWidth="930.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
 
       <!-- Sección de la Tabla -->
-      <Label layoutX="25.0" layoutY="335.0" styleClass="titulo" text="EMPLEADOS REGISTRADOS" />
+      <Label layoutX="22.0" layoutY="381.0" styleClass="titulo" text="EMPLEADOS REGISTRADOS" />
 
-      <TableView fx:id="tblEmpleados" layoutX="25.0" layoutY="365.0" prefHeight="325.0" prefWidth="930.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="365.0">
+      <TableView fx:id="tblEmpleados" layoutX="7.0" layoutY="415.0" prefHeight="270.0" prefWidth="960.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="415.0">
          <columns>
             <TableColumn fx:id="colId" prefWidth="45.0" text="ID" />
-            <TableColumn fx:id="colNombres" prefWidth="110.0" text="Nombres" />
-            <TableColumn fx:id="colApellidos" prefWidth="110.0" text="Apellidos" />
-            <TableColumn fx:id="colCedula" prefWidth="110.0" text="Cédula" />
-            <TableColumn fx:id="colCorreo" prefWidth="130.0" text="Correo" />
-            <TableColumn fx:id="colTelefono" prefWidth="85.0" text="Teléfono" />
-            <TableColumn fx:id="colCargo" prefWidth="105.0" text="Cargo" />
-            <TableColumn fx:id="colDepartamento" prefWidth="110.0" text="Departamento" />
-            <TableColumn fx:id="colSalario" prefWidth="75.0" text="Salario" />
-            <TableColumn fx:id="colFechaContratacion" prefWidth="100.0" text="F. Contratación" />
+            <TableColumn fx:id="colNombres" prefWidth="96.5" text="Nombres" />
+            <TableColumn fx:id="colApellidos" prefWidth="109.0" text="Apellidos" />
+            <TableColumn fx:id="colCedula" prefWidth="108.0" text="Cédula" />
+            <TableColumn fx:id="colCorreo" prefWidth="106.0" text="Correo" />
+            <TableColumn fx:id="colTelefono" prefWidth="94.0" text="Teléfono" />
+            <TableColumn fx:id="colCargo" prefWidth="71.5" text="Cargo" />
+            <TableColumn fx:id="colDepartamento" prefWidth="122.5" text="Departamento" />
+            <TableColumn fx:id="colSalario" minWidth="0.0" prefWidth="55.5" text="Salario" />
+            <TableColumn fx:id="colFechaContratacion" prefWidth="172.0" text="F. Contratación" />
             <TableColumn fx:id="colEstado" prefWidth="65.0" text="Estado" />
          </columns>
       </TableView>
+      <Button fx:id="btnActualizar1" layoutX="100.0" layoutY="323.0" onAction="#actualizarTabla" prefHeight="32.0" prefWidth="130.0" styleClass="btn-info" text="Eliminar" />
+      <Button fx:id="btnActualizar2" layoutX="250.0" layoutY="323.0" onAction="#actualizarTabla" prefHeight="32.0" prefWidth="130.0" styleClass="btn-info" text="Actualizar" />
    </children>
 </AnchorPane>
