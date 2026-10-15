@@ -52,9 +52,9 @@
       <ComboBox fx:id="cmbConsulta" layoutX="640.0" layoutY="275.0" onAction="#cargarEmpleados" prefHeight="32.0" prefWidth="280.0" promptText="Seleccionar consulta..." />
 
       <!-- Botones de Acción -->
-      <Button fx:id="btnGuardar" layoutX="39.0" layoutY="275.0" onAction="#guardarEmpleado" prefHeight="32.0" prefWidth="110.0" styleClass="btn-primary" text="Guardar" />
-      <Button fx:id="btnLimpiar" layoutX="165.0" layoutY="274.0" onAction="#limpiarCampos" prefHeight="32.0" prefWidth="110.0" styleClass="btn-secondary" text="Limpiar" />
-      <Button fx:id="btnActualizar" layoutX="296.0" layoutY="274.0" onAction="#actualizarTabla" prefHeight="32.0" prefWidth="130.0" styleClass="btn-info" text="Actualizar tabla" />
+      <Button fx:id="btnGuardar" layoutX="134.0" layoutY="266.0" onAction="#guardarEmpleado" prefHeight="32.0" prefWidth="110.0" styleClass="btn-primary" text="Guardar" />
+      <Button fx:id="btnLimpiar" layoutX="134.0" layoutY="317.0" onAction="#limpiarCampos" prefHeight="32.0" prefWidth="110.0" styleClass="btn-secondary" text="Limpiar" />
+      <Button fx:id="btnActualizar" layoutX="263.0" layoutY="266.0" onAction="#actualizarTabla" prefHeight="32.0" prefWidth="130.0" styleClass="btn-info" text="Actualizar tabla" />
 
       <Separator layoutX="25.0" layoutY="363.0" prefHeight="3.0" prefWidth="930.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
 
@@ -76,7 +76,6 @@
             <TableColumn fx:id="colEstado" prefWidth="65.0" text="Estado" />
          </columns>
       </TableView>
-      <Button fx:id="btnActualizar1" layoutX="100.0" layoutY="323.0" onAction="#actualizarTabla" prefHeight="32.0" prefWidth="130.0" styleClass="btn-info" text="Eliminar" />
-      <Button fx:id="btnActualizar2" layoutX="250.0" layoutY="323.0" onAction="#actualizarTabla" prefHeight="32.0" prefWidth="130.0" styleClass="btn-info" text="Actualizar" />
+      <Button fx:id="btnActualizar1" layoutX="263.0" layoutY="317.0" onAction="#actualizarTabla" prefHeight="32.0" prefWidth="130.0" styleClass="btn-info" text="Eliminar" />
    </children>
 </AnchorPane>
