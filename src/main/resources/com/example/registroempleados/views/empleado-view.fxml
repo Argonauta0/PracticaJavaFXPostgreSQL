@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="710.0" prefWidth="980.0" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registroempleados.controller.EmpleadoController">
+<AnchorPane prefHeight="710.0" prefWidth="980.0" stylesheets="@../Style/Style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registroempleados.controller.EmpleadoController">
    <children>
       <!-- Título Principal -->
       <Label layoutX="25.0" layoutY="20.0" styleClass="titulo" text="REGISTRO DE EMPLEADOS" />

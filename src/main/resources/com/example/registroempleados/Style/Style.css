@@ -1,0 +1,108 @@
+.root {
+    -fx-background-color: #f8fafc;
+    -fx-font-family: "Segoe UI", "Inter", "System";
+    -fx-font-size: 13px;
+}
+
+.titulo {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f172a;
+}
+
+.label-campo {
+    -fx-font-weight: bold;
+    -fx-text-fill: #334155;
+}
+
+.text-field,
+.combo-box,
+.date-picker {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+}
+
+.text-field:focused,
+.combo-box:focused,
+.date-picker:focused {
+    -fx-border-color: #4f46e5;
+}
+
+.button {
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-text-fill: #ffffff;
+}
+
+.btn-primary {
+    -fx-background-color: #4f46e5;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #4338ca;
+}
+
+.btn-secondary {
+    -fx-background-color: #64748b;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #475569;
+}
+
+.btn-info {
+    -fx-background-color: #0284c7;
+}
+
+.btn-info:hover {
+    -fx-background-color: #0369a1;
+}
+
+.btn-danger {
+    -fx-background-color: #e11d48;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #be123c;
+}
+
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 6px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f1f5f9;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent #e2e8f0 #cbd5e1 transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e293b;
+    -fx-alignment: CENTER;
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f8fafc;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #e0e7ff;
+    -fx-text-background-color: #1e1b4b;
+}
+
+.separator .line {
+    -fx-border-color: #e2e8f0;
+}
